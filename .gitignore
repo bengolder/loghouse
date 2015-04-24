@@ -1,0 +1,9 @@
+bin
+include
+lib
+.Python
+*.sw[po]
+.DS_Store
+__pycache__
+env.py
+*.sqlite3
