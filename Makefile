@@ -1,12 +1,18 @@
-MANAGE = python ./lh_project/manage.py
+MANAGE = python ./lh/manage.py
+
+serve:
+	$(MANAGE) runserver 3001
 
 run:
-	${MANAGE} runserver 3001
+	$(MANAGE) runscript $(script)
+
+db.rm:
+	rm ./lh/test_db.sqlite3
 
 db.check:
-	${MANAGE} makemigrations
+	$(MANAGE) makemigrations
 
 db.migrate:
-	${MANAGE} migrate
+	$(MANAGE) migrate
 
 

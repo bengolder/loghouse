@@ -31,7 +31,9 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'loghouse'
+    'django_extensions',
+    'rest_framework',
+    'loghouse',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -45,7 +47,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
-ROOT_URLCONF = 'lh_project.urls'
+ROOT_URLCONF = 'lh.urls'
 
 TEMPLATES = [
     {
@@ -63,7 +65,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'lh_project.wsgi.application'
+WSGI_APPLICATION = 'lh.wsgi.application'
 
 DATABASES = {
     'default': {
