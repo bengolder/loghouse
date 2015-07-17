@@ -7,3 +7,4 @@ lib
 __pycache__
 env.py
 *.sqlite3
+migrations
