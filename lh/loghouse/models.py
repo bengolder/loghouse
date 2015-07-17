@@ -28,3 +28,4 @@ class Tag(Dated):
     count = models.IntegerField(default=0)
     posts = models.ManyToManyField(Post, blank=True, related_name='tags')
 
+

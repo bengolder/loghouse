@@ -15,4 +15,12 @@ db.check:
 db.migrate:
 	$(MANAGE) migrate
 
+test.travis:
+	nosetests \
+		--nocapture \
+		--with-coverage \
+		--cover-package=loghouse
+test:
+	make test.travis
+	make clean
 
